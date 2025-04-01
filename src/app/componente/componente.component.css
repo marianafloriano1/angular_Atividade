@@ -1,0 +1,17 @@
+
+table{
+    width: 60%;
+    align-items: center;
+    border-color: rgba(150, 123, 182, 0.3);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+th{
+    text-align: center;
+    background-color: rgba(150, 123, 182, 0.3);
+
+}

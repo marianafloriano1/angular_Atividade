@@ -1,1 +1,21 @@
-<p>componente works!</p>
+
+    <div class="container">
+
+        <table class="table table-bordered table-hover table-responsive">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Título</th>
+            <th scope="col">Conteúdo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of infos">
+            <td>{{i.id}}</td>
+            <td>{{ i.title | slice:0:30 }}{{ i.title.length > 30 ? '...' : '' }}</td>
+            <td>{{ i.body | slice:0:30 }}{{ i.title.length > 30 ? '...' : '' }}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
